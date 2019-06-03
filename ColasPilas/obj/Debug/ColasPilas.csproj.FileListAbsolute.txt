@@ -1,1 +1,8 @@
 C:\Users\alu801.LABS.000.001\Documents\visual studio 2015\Projects\ConsoleApplication1\PilasColas\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\jalil\Documents\Projects C#\Progra2ColasPilas\ColasPilas\obj\Debug\ColasPilas.csprojAssemblyReference.cache
+C:\Users\jalil\Documents\Projects C#\Progra2ColasPilas\ColasPilas\obj\Debug\ColasPilas.csproj.CoreCompileInputs.cache
+C:\Users\jalil\Documents\Projects C#\Progra2ColasPilas\ColasPilas\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\jalil\Documents\Projects C#\Progra2ColasPilas\ColasPilas\bin\Debug\ConsoleApplication1.exe
+C:\Users\jalil\Documents\Projects C#\Progra2ColasPilas\ColasPilas\bin\Debug\ConsoleApplication1.pdb
+C:\Users\jalil\Documents\Projects C#\Progra2ColasPilas\ColasPilas\obj\Debug\ConsoleApplication1.exe
+C:\Users\jalil\Documents\Projects C#\Progra2ColasPilas\ColasPilas\obj\Debug\ConsoleApplication1.pdb
