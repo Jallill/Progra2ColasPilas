@@ -162,5 +162,112 @@ namespace ColasPilas
             }
             return c;
         }
+
+        /// <summary>
+        /// Hago la union de los 2 diccionarios, completamente.
+        /// </summary>
+        /// <param name="D1"></param>
+        /// <param name="D2"></param>
+        /// <returns></returns>
+        public static Dictionary<int, Conjunto> Union(Dictionary<int, Conjunto> D1, Dictionary<int, Conjunto> D2)
+        {
+            Dictionary<int, Conjunto> resultado = new Dictionary<int, Conjunto>();
+
+            foreach (KeyValuePair<int, Conjunto> item in D1)
+            {
+                Conjunto aux = new Conjunto();
+                aux.InicializarConjunto();
+                //Engine.Debug("Se inicializo un conjunto con indice " + aux.Array.Length);
+                aux.Agregar(item.Value.a);
+
+                resultado.Add(item.Key, item.Value);
+                //resultado[item.Key].InicializarConjunto(D1[item.Key].Array.Length + D2[item.Key].Array.Length);
+            }
+
+            foreach (KeyValuePair<int, Conjunto> item in D2)
+            {
+                resultado[item.Key].Agregar(item.Value.a);
+            }
+            return resultado;
+        }
+
+        /// <summary>
+        /// Hago la union de los 2 diccionarios, solo de los elementos coincidentes en cada conjunto.
+        /// </summary>
+        /// <param name="D1"></param>
+        /// <param name="D2"></param>
+        /// <returns></returns>
+        public static Dictionary<int, Conjunto> UnionClavesCoincidentes(Dictionary<int, Conjunto> D1, Dictionary<int, Conjunto> D2)
+        {
+            Dictionary<int, Conjunto> resultado = new Dictionary<int, Conjunto>();
+
+            foreach (KeyValuePair<int, Conjunto> item in D1)
+            {
+                Conjunto aux = new Conjunto();
+                aux.InicializarConjunto();
+                aux.Agregar(item.Value.a);
+
+                resultado.Add(item.Key, item.Value);
+            }
+
+            foreach (KeyValuePair<int, Conjunto> item in D2)
+            {
+                resultado[item.Key].Agregar(item.Value.a);
+            }
+            return resultado;
+        }
+
+        /// <summary>
+        /// Hago la union de los 2 diccionarios, completamente, de los elementos que comparten clave.
+        /// </summary>
+        /// <param name="D1"></param>
+        /// <param name="D2"></param>
+        /// <returns></returns>
+        public static Dictionary<int, Conjunto> UnionClavesComunes(Dictionary<int, Conjunto> D1, Dictionary<int, Conjunto> D2)
+        {
+            Dictionary<int, Conjunto> resultado = new Dictionary<int, Conjunto>();
+
+            foreach (KeyValuePair<int, Conjunto> item in D1)
+            {
+                Conjunto aux = new Conjunto();
+                aux.InicializarConjunto();
+                aux.Agregar(item.Value.a);
+
+                resultado.Add(item.Key, item.Value);
+            }
+
+            foreach (KeyValuePair<int, Conjunto> item in D2)
+            {
+                resultado[item.Key].Agregar(item.Value.a);
+            }
+            return resultado;
+        }
+
+        /// <summary>
+        /// Hago la union de los 2 diccionarios, completamente de los elementos coincidentes que comparten clave.
+        /// </summary>
+        /// <param name="D1"></param>
+        /// <param name="D2"></param>
+        /// <returns></returns>
+        public static Dictionary<int, Conjunto> UnionClavesComunesCoincidentes(Dictionary<int, Conjunto> D1, Dictionary<int, Conjunto> D2)
+        {
+            Dictionary<int, Conjunto> resultado = new Dictionary<int, Conjunto>();
+
+            foreach (KeyValuePair<int, Conjunto> item in D1)
+            {
+                Conjunto aux = new Conjunto();
+                aux.InicializarConjunto();
+                aux.Agregar(item.Value.a);
+
+                resultado.Add(item.Key, item.Value);
+            }
+
+            foreach (KeyValuePair<int, Conjunto> item in D2)
+            {
+                resultado[item.Key].Agregar(item.Value.a);
+            }
+            return resultado;
+        }
+
     }
 }

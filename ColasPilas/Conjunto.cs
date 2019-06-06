@@ -8,7 +8,7 @@ namespace ColasPilas
 {
     class Conjunto
     {
-        int[] a;
+        public int[] a { get; private set; }
         int cant;
         public void Agregar(int x)
         {
@@ -16,6 +16,17 @@ namespace ColasPilas
             {
                 a[cant] = x;
                 cant++;
+            }
+        }
+        public void Agregar(int[] x)
+        {
+            for (int i = 0; i < x.Length; i++)
+            {
+                if (!Pertenece(x[i]))
+                {
+                    a[cant] = x[i];
+                    cant++;
+                }
             }
         }
         public bool ConjuntoVacio()

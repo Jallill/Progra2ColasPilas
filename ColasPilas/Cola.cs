@@ -99,5 +99,44 @@ namespace ColasPilas
             return true;
         }
 
+        /// <summary>
+        /// Elimino todos los elementos repetidos en la cola.
+        /// </summary>
+        /// <returns>El primer valor que se ingreso que se repetia.</returns>
+        public int EliminarRepeticiones()
+        {
+            int[] aux = new int[100];
+            for (int i = 0; i < array.Length; i++)
+            {
+                aux[i] = array[i];
+            }
+            int primeroEncontrado = 0;
+            //Recorro ambos arrays y elimino de aux los valores repetidos.
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] != 0)
+                {
+                    for (int j = 0; j < aux.Length; j++)
+                    {
+                        if (array[i] == aux[j])
+                        {
+                            if (primeroEncontrado == 0)
+                            {
+                                primeroEncontrado = aux[j];
+                            }
+                            aux[j] = 0;
+                        }
+                    }
+                }
+            }
+            //Reinicio a y le agrego los valores de aux.
+            InicializarCola();
+            for (int i = 0; i < aux.Length; i++)
+            {
+                Acolar(aux[i]);
+            }
+            return primeroEncontrado;
+        }
+
     }
 }
