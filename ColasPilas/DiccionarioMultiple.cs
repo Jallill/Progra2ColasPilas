@@ -14,28 +14,32 @@ namespace ColasPilas
             public NodoValor valores;
             public NodoClave sigClave;
         }
+
         public class NodoValor
         {
             public int valor;
             public NodoValor sigValor;
         }
+
         NodoClave origen;
         public void InicializarDiccionario()
         {
             origen = null;
         }
+
         public void Agregar(int clave, int valor)
         {
             NodoClave nc = Clave2NodoClave(clave);
             if (nc == null)
             {
+                nc = new NodoClave();
             }
-            nc = new NodoClave();
             nc.clave = clave;
             nc.sigClave = origen;
             origen = nc;
 
             NodoValor aux = nc.valores;
+
             while (aux != null && aux.valor != valor)
             {
                 aux = aux.sigValor;
@@ -48,6 +52,7 @@ namespace ColasPilas
                 nc.valores = nv;
             }
         }
+
         private NodoClave Clave2NodoClave(int clave)
         {
             NodoClave aux = origen;
@@ -57,6 +62,7 @@ namespace ColasPilas
             }
             return aux;
         }
+
         public void EliminarValor(int clave, int valor)
         {
             if (origen != null)
@@ -88,6 +94,7 @@ namespace ColasPilas
                 }
             }
         }
+
         private void EliminarValorEnNodo(NodoClave nodo, int valor)
         {
             if (nodo.valores != null)
@@ -111,6 +118,7 @@ namespace ColasPilas
                 }
             }
         }
+
         public void Eliminar(int clave)
         {
             if (origen != null)
@@ -134,6 +142,7 @@ namespace ColasPilas
                 }
             }
         }
+
         public Conjunto Recuperar(int clave)
         {
             NodoClave n = Clave2NodoClave(clave);
@@ -150,6 +159,7 @@ namespace ColasPilas
             }
             return c;
         }
+
         public Conjunto Claves()
         {
             Conjunto c = new Conjunto();

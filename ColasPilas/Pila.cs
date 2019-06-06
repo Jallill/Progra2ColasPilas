@@ -8,7 +8,7 @@ namespace ColasPilas
 {
     class Pila : PilaTDA
     {
-        int[] a;
+        public int[] a { get; private set; }
         int i;
 
         public void InicializarPila()
@@ -23,7 +23,11 @@ namespace ColasPilas
         }
         public void Desapilar()
         {
-            i --;
+            if (!PilaVacia())
+            {
+                for (int j = i - 1; j >= 0; j--)  a[j] = a[j + 1];
+            }
+            i--;
         }
         public bool PilaVacia()
         {
@@ -32,6 +36,10 @@ namespace ColasPilas
         public int Tope()
         {
             return a[i - 1];
+        }
+        public int Contar()
+        {
+            return i;
         }
 
         /// <summary>
