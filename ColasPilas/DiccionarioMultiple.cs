@@ -211,19 +211,39 @@ namespace ColasPilas
         {
             Dictionary<int, Conjunto> resultado = new Dictionary<int, Conjunto>();
 
+            
             foreach (KeyValuePair<int, Conjunto> item in D1)
             {
                 Conjunto aux = new Conjunto();
                 aux.InicializarConjunto();
-                aux.Agregar(item.Value.a);
 
-                resultado.Add(item.Key, item.Value);
+                if (D2.ContainsKey(item.Key))
+                {
+                    for(int i = 0; i <= D2[item.Key].cant - 1; i++)
+                    {
+                        if (item.Value.Pertenece(D2[item.Key].a[i])) { aux.Agregar(D2[item.Key].a[i]); }
+                    }
+                }
+
+                resultado.Add(item.Key, aux);
             }
 
             foreach (KeyValuePair<int, Conjunto> item in D2)
             {
-                resultado[item.Key].Agregar(item.Value.a);
+
+
+                if(resultado.ContainsKey(item.Key))
+                {
+                    for(int i = 0; i <= item.Value.cant - 1; i++)
+                    {
+                        if (!resultado[item.Key].Pertenece(item.Value.a[i])) item.Value.Agregar(item.Value.a[i]);
+                    }
+                } else {
+                    resultado.Add(item.Key, new Conjunto());
+                }
+                
             }
+
             return resultado;
         }
 

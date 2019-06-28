@@ -9,7 +9,7 @@ namespace ColasPilas
     class Conjunto
     {
         public int[] a { get; private set; }
-        int cant;
+        public int cant { get; private set; }
 
         public void Agregar(int x)
         {
