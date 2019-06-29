@@ -6,3 +6,10 @@ C:\Users\jalil\Documents\Projects C#\Progra2ColasPilas\ColasPilas\bin\Debug\Cons
 C:\Users\jalil\Documents\Projects C#\Progra2ColasPilas\ColasPilas\bin\Debug\ConsoleApplication1.pdb
 C:\Users\jalil\Documents\Projects C#\Progra2ColasPilas\ColasPilas\obj\Debug\ConsoleApplication1.exe
 C:\Users\jalil\Documents\Projects C#\Progra2ColasPilas\ColasPilas\obj\Debug\ConsoleApplication1.pdb
+D:\Docs\C#\Progra2ColasPilas\ColasPilas\obj\Debug\ColasPilas.csprojAssemblyReference.cache
+D:\Docs\C#\Progra2ColasPilas\ColasPilas\obj\Debug\ColasPilas.csproj.CoreCompileInputs.cache
+D:\Docs\C#\Progra2ColasPilas\ColasPilas\bin\Debug\ConsoleApplication1.exe.config
+D:\Docs\C#\Progra2ColasPilas\ColasPilas\bin\Debug\ConsoleApplication1.exe
+D:\Docs\C#\Progra2ColasPilas\ColasPilas\bin\Debug\ConsoleApplication1.pdb
+D:\Docs\C#\Progra2ColasPilas\ColasPilas\obj\Debug\ConsoleApplication1.exe
+D:\Docs\C#\Progra2ColasPilas\ColasPilas\obj\Debug\ConsoleApplication1.pdb
