@@ -70,7 +70,6 @@ namespace Game.Ejercicios
 
         public static int H(IABBTDA abb, int a = 1, int alt = 1)
         {
-            
             if (!abb.HijoIzq().ArbolVacio()) alt = H(abb.HijoIzq(), a + 1, alt);
             if (!abb.HijoDer().ArbolVacio()) alt = H(abb.HijoDer(), a + 1, alt);
             if (a > alt) alt = a;
