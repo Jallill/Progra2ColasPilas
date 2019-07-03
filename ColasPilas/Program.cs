@@ -62,16 +62,16 @@ namespace ColasPilas
 
             D2.Agregar(3, 40);
             D2.Agregar(3, 50);
-            D2.Agregar(3, 60);
-            D2.Agregar(2, 70);
+            D2.Agregar(3, 100);
             D2.Agregar(2, 80);
-            D2.Agregar(2, 90);
+            D2.Agregar(2, 70);
+            D2.Agregar(2, 111);
             D2.Agregar(5, 100);
             D2.Agregar(5, 100);
             D2.Agregar(5, 1000);
 
-            IDiccionarioMultipleTDA A = EDiccionario.A(D1, D2);
-            ShowDic(A);
+            IDiccionarioMultipleTDA prueba = EDiccionario.D(D1, D2);
+            ShowDic(prueba);
 
             Console.ReadKey();
         }
