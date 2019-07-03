@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Ejercicios\EABB.cs" />
     <Compile Include="Ejercicios\EABBI.cs" />
+    <Compile Include="Ejercicios\EDiccionario.cs" />
     <Compile Include="Implementaciones\ABB.cs" />
     <Compile Include="Implementaciones\ColaLD.cs" />
     <Compile Include="Implementaciones\ColaPI.cs" />

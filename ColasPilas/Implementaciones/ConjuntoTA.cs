@@ -44,26 +44,20 @@ namespace Game.Implementaciones
         public bool Pertenece(int x)
         {
             int i = 0;
-            while (i < cant && a[i] != x)
-            {
-                i++;
-            }
+            while (i < cant && a[i] != x) i++;
             return i < cant;
         }
 
         public void Sacar(int x)
         {
             int i = 0;
-            while (i < cant && a[i] != x)
-            {
-                i++;
-            }
-
+            while (i < cant && a[i] != x) i++;
             if (i < cant)
             {
                 a[i] = a[cant - 1];
                 cant--;
             }
+            
         }
     }
 }
