@@ -10,6 +10,7 @@ namespace Game.Ejercicios
         // Las claves presentes en D1 y D2, con todos los elementos asociados a cada clave
         public static IDiccionarioMultipleTDA A(IDiccionarioMultipleTDA D1, IDiccionarioMultipleTDA D2)
         {
+            
             IConjuntoTDA C2 = D2.Claves();
         
             IDiccionarioMultipleTDA DResult = D1;
