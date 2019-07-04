@@ -70,7 +70,7 @@ namespace ColasPilas
             D2.Agregar(5, 100);
             D2.Agregar(5, 1000);
 
-            IDiccionarioMultipleTDA prueba = EDiccionario.D(D1, D2);
+            IDiccionarioMultipleTDA prueba = EDiccionario.A(D1, D2);
             ShowDic(prueba);
 
             Console.ReadKey();

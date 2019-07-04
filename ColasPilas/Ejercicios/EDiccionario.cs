@@ -8,31 +8,11 @@ namespace Game.Ejercicios
 
         public static IDiccionarioMultipleTDA A(IDiccionarioMultipleTDA D1, IDiccionarioMultipleTDA D2)
         {
-            IConjuntoTDA C1 = D1.Claves();
             IConjuntoTDA C2 = D2.Claves();
-            IDiccionarioMultipleTDA DResult = new DicMultipleA();
-
-            DResult.InicializarDiccionario();
+        
+            IDiccionarioMultipleTDA DResult = D1;
 
             int key;
-
-            while (!C1.ConjuntoVacio())
-            {
-
-                key = C1.Elegir();
-
-                IConjuntoTDA aux = D1.Recuperar(key);
-
-                while (!aux.ConjuntoVacio())
-                {
-                    int i = aux.Elegir();
-                    DResult.Agregar(key, i);
-                    aux.Sacar(i);
-                }
-
-                C1.Sacar(key);
-
-            }
 
             while (!C2.ConjuntoVacio())
             {
@@ -154,7 +134,7 @@ namespace Game.Ejercicios
                     {
                         int i = aux.Elegir();
                         if(aux2.Pertenece(i))
-                        DResult.Agregar(key, i);
+                            DResult.Agregar(key, i);
                         aux.Sacar(i);
                     }
                     C2.Sacar(key);
