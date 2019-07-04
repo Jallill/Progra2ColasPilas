@@ -6,6 +6,7 @@ namespace Game.Ejercicios
 {
     public static class EABBI
     {
+        // Dado un elemento, determinar si está o no en un ABB
         public static bool A(IABBTDA abb, int x)
         {
             while (!abb.ArbolVacio())
@@ -17,6 +18,7 @@ namespace Game.Ejercicios
             return false;
         }
 
+        // Dado un elemento, determinar si es una hoja de un ABB
         public static bool B(IABBTDA abb, int x)
         {
             while (!abb.ArbolVacio())
@@ -28,6 +30,7 @@ namespace Game.Ejercicios
             return false;
         }
 
+        // Dado un elemento, calcular su profundidad en el ABB
         public static int C(IABBTDA abb, int x)
         {
             int i = 1;
@@ -41,6 +44,8 @@ namespace Game.Ejercicios
             return -1;
         }
 
+
+        // Obtener el valor del menor elemento de un ABB
         public static int D(IABBTDA abb){
             while (!abb.HijoIzq().ArbolVacio())
             {
@@ -49,6 +54,7 @@ namespace Game.Ejercicios
             return abb.Raiz();
         }
 
+        // Calcular la cantidad de elementos que contiene un ABB
         public static int E(IABBTDA abb)
         {
             int i = 0;
@@ -71,6 +77,7 @@ namespace Game.Ejercicios
             return i;
         }
 
+        // Calcular la suma de los elementos que contiene un ABB
         public static int F(IABBTDA abb)
         {
             int count = 0;
@@ -92,6 +99,7 @@ namespace Game.Ejercicios
             return count;
         }
 
+        // Calcular el cantidad de hojas de un ABB
         public static int G(IABBTDA abb)
         {
             int i = 0;
@@ -114,6 +122,7 @@ namespace Game.Ejercicios
             return i;
         }
 
+        // Calcular la altura de un ABB
         public static int H(IABBTDA abb)
         {
             int altura = 0;
