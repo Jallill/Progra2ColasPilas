@@ -5,7 +5,9 @@ namespace Game.Ejercicios
 {
     public static class EDiccionario
     {
+        // Dados dos DiccionarioMultipleTDA D1 y D2, generar un DiccionarioMultipleTDA que contenga =
 
+        // Las claves presentes en D1 y D2, con todos los elementos asociados a cada clave
         public static IDiccionarioMultipleTDA A(IDiccionarioMultipleTDA D1, IDiccionarioMultipleTDA D2)
         {
             IConjuntoTDA C2 = D2.Claves();
@@ -33,6 +35,8 @@ namespace Game.Ejercicios
             return DResult;
         }
 
+
+        // Las claves presentes en D1 y D2, con todos los elementos comunes a las claves coincidentes en ambos.
         public static IDiccionarioMultipleTDA B(IDiccionarioMultipleTDA D1, IDiccionarioMultipleTDA D2)
         {
             IConjuntoTDA C1 = D1.Claves();
@@ -70,6 +74,8 @@ namespace Game.Ejercicios
             return DResult;
         }
 
+
+        // Las claves comunes de D1 y D2, con todos los elementos asociados a cada clave
         public static IDiccionarioMultipleTDA C(IDiccionarioMultipleTDA D1, IDiccionarioMultipleTDA D2)
         {
             IConjuntoTDA C1 = D1.Claves();
@@ -110,7 +116,8 @@ namespace Game.Ejercicios
 
             return DResult;
         }
-        
+
+        // Las claves comunes de D1 y D2, con todos los elementos comunes a las claves coincidentes en ambos.
         public static IDiccionarioMultipleTDA D(IDiccionarioMultipleTDA D1, IDiccionarioMultipleTDA D2)
         {
             IConjuntoTDA C1 = D1.Claves();

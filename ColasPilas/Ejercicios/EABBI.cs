@@ -151,6 +151,7 @@ namespace Game.Ejercicios
             }
         }
 
+        // Comprobar si dos ABBs tienen la misma forma
         public static bool I(IABBTDA abb1, IABBTDA abb2)
         {
             
@@ -180,6 +181,7 @@ namespace Game.Ejercicios
             return true;
         }
 
+        // Comprobar si dos ABBs son iguales
         public static bool J(IABBTDA abb1, IABBTDA abb2)
         {
             Queue<IABBTDA> cola1 = new Queue<IABBTDA>();
@@ -209,6 +211,7 @@ namespace Game.Ejercicios
             return true;
         }
 
+        // Contar la cantidad de elementos que están en un cierto nivel N
         public static int K(IABBTDA abb, int x)
         {
             int i = 0;
@@ -239,6 +242,7 @@ namespace Game.Ejercicios
             }
         }
 
+        // Mostrar por pantalla todos los elementos que contiene un ABB: In-orden
         public static void L1(IABBTDA abb)
         {
             if (abb.ArbolVacio())
@@ -267,6 +271,7 @@ namespace Game.Ejercicios
             }
         }
 
+        // Mostrar por pantalla todos los elementos que contiene un ABB: Pre-orden
         public static void L2(IABBTDA abb)
         {
             if (abb.ArbolVacio())
@@ -295,6 +300,7 @@ namespace Game.Ejercicios
             }
         }
 
+        // Mostrar por pantalla todos los elementos que contiene un ABB: Post-orden
         public static void L3(IABBTDA abb)
         {
 
